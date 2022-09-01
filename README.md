@@ -1,5 +1,5 @@
 # CCOMP2-2-DIEGO
-minombre
+Diego Portugal
 
 Ciencia de la Computacion 
- vafsafsasffa
+
