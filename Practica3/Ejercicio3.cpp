@@ -13,6 +13,7 @@ bool esprimo(long long int primo){
         }
         i++;
     }
+    
     if (cuantos==2){
         return true;
     }
@@ -21,6 +22,17 @@ bool esprimo(long long int primo){
     }
     }
 
+bool esprimo2(long long primo){
+
+    long long factor=2;
+    while (factor<=primo/2){
+        if (!(primo%factor)){
+            return false;
+        }
+        factor++;
+    }
+    return true;
+}
 int main(){
 
 long long int largest=0;
@@ -28,7 +40,7 @@ long long int largest=0;
     for (long long int  i=1;i<=13195;i++){
         if (13195%i==0){
             //cout<<i<< " es divisor de 13195"<<endl;
-                if (esprimo(i)){
+                if (esprimo2(i)){
                     largest=i;
                 }     
         }
@@ -41,7 +53,7 @@ largest=0;
     for (long long int i=1;i<=600851475143;i++){
         if (600851475143%i==0){
             cout<<i<< " es divisor de 600851475143"<<endl;
-                if (esprimo(i)){
+                if (esprimo2(i)){
                     largest=i;
                 }  
             cout<<largest<< " es factor primo"<<endl;

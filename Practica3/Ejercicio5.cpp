@@ -5,10 +5,10 @@
 using namespace std;
 
 int main(){   
-long number=0,divisores=0;
+long long int number=0,divisores=0;
 
 while (true){
-    for(int n=1;n<=11;n++){
+    for(long long int n=1;n<=11;n++){
         if (number%n==0){
             divisores+=1;
         }
@@ -26,10 +26,10 @@ while (true){
 
 cout<< "El menor numero que puede ser dividido por los numeros del 1 al 10 es: "<< number<<endl;
 
-number=1,divisores=0;
+number=0,divisores=0;
 
 while (true){
-    for(int n=1;n<=21;n++){
+    for(long long int n=1;n<=21;n++){
         if (number%n==0){
             divisores+=1;
         }
